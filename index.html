@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>부가부 x 행복라운지</title>
+  <style>
+    :root{
+      --bg:#117f7f;
+      --text:#ffffff;
+      --btnBg:#ffffff;
+      --btnText:#111111;
+    }
+    *{box-sizing:border-box; font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans KR",Arial;}
+    body{
+      margin:0; min-height:100vh;
+      background: var(--bg);
+      color: var(--text);
+      display:flex; justify-content:center;
+      padding:28px 16px 40px;
+      text-align:center;
+    }
+    .wrap{width:100%; max-width:520px;}
+    .logo{
+      width:92px; height:92px; border-radius:999px;
+      margin: 6px auto 14px;
+      overflow:hidden;
+      border:4px solid rgba(255,255,255,.85);
+      background: rgba(255,255,255,.12);
+      display:grid; place-items:center;
+      font-weight:800;
+      letter-spacing:.5px;
+    }
+    .logo img{width:100%; height:100%; object-fit:cover;}
+    h1{margin:0; font-size:22px; font-weight:800;}
+    .sub{margin:10px 0 0; opacity:.95; line-height:1.55;}
+    .buttons{margin-top:26px; display:grid; gap:16px;}
+    a.btn{
+      display:block;
+      background: var(--btnBg);
+      color: var(--btnText);
+      text-decoration:none;
+      padding:18px 18px;
+      border-radius: 999px;
+      font-size:18px;
+      font-weight:800;
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+      transition: transform .08s ease;
+    }
+    a.btn:hover{transform: translateY(-1px);}
+    .foot{margin-top:18px; font-size:12px; opacity:.85;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">
+      <!-- 같은 레포에 logo.png 업로드하면 자동으로 표시됨 -->
+      <img src="logo.png" alt="logo"
+        onerror="this.style.display='none'; this.parentElement.textContent='LOGO';" />
+    </div>
+
+    <!-- 텍스트 2줄 -->
+    <h1>행복라운지 방문 고객 한정 프로모션</h1>
+    <div class="sub">
+      부가부 지라프 하이체어<br/>
+      방문 고객 대상 한정 혜택 제공
+    </div>
+
+    <!-- 버튼 4개 -->
+    <div class="buttons">
+      <a class="btn" href="https://brand.naver.com/bugabookorea/products/13141475319" target="_blank" rel="noopener">지라프 하이체어</a>
+      <a class="btn" href="https://brand.naver.com/bugabookorea/products/13141479622" target="_blank" rel="noopener">지라프 하이체어+베이비세트+트레이</a>
+      <a class="btn" href="https://brand.naver.com/bugabookorea/products/13141483047" target="_blank" rel="noopener">지라프 바운서</a>
+      <a class="btn" href="https://brand.naver.com/bugabookorea/products/13141485965" target="_blank" rel="noopener">지라프 뉴본세트</a>
+    </div>
+
+    <div class="foot">© Bugaboo</div>
+  </div>
+</body>
+</html>
